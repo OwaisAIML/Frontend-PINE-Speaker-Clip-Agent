@@ -27,9 +27,11 @@ uploadBtn.onclick = async () => {
       body: formData
     });
 
-    if (!response.ok) {
-      throw new Error("Server error");
-    }
+   if (!response.ok) {
+  const text = await response.text();
+  throw new Error(text);
+}
+
 
     const data = await response.json();
 
