@@ -4,7 +4,9 @@ const statusDiv = document.getElementById("status");
 const resultPre = document.getElementById("result");
 
 // CHANGE THIS IF BACKEND URL CHANGES
-const API_URL = "https://pine-speaker-clip-agent.onrender.com/diarize";
+const API_URL =
+  "https://pine-speaker-clip-agent.onrender.com/diarize-video";
+
 
 uploadBtn.onclick = async () => {
   if (!videoInput.files.length) {
